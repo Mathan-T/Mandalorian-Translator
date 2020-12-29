@@ -5,7 +5,7 @@ console.log(textInput);
 
 function clickHandler() {
     console.log("clicked!");
-    console.log("input", textInput.value);
+    console.log("Input:", textInput.value);
 };
 
 btnTranslate.addEventListener("click", clickHandler)
