@@ -1,38 +1,31 @@
-var btnTranslate = document.querySelector("#btn-translate")
-var textInput = document.querySelector("#txt-input")
-var textOutput = document.querySelector("#output")
+var buttonTranslate = document.querySelector("#btn-translate")
+var inputText = document.querySelector("#txt-input")
+var outputText = document.querySelector("#output")
 
 var serverURL = "https://api.funtranslations.com/translate/groot.json"
 
+
 function getTranslationURL(text) {
-    return serverURL + "?" + "text=" + text
-}
+    return serverURL + "?" + "text= " + text
+};
+
 
 function errorHandler(error) {
-    console.log("Error occured", error);
-    alert("This translation app is rate limited to 5 per hour....please try after sometime!!")
+    console.log("error occured", error);
+    alert("This translation app is free to use and rate limited to 5 times per hour....Please try after some time!!")
 }
 
 function clickHandler() {
-    var inputText = textInput.value;
+    var textInput = inputText.value;
 
-
-    fetch(getTranslationURL(inputText))
+    fetch(getTranslationURL(textInput))
     .then(response => response.json())
     .then(json => console.log(json.contents.translated))
     .catch(errorHandler)
 };
 
-btnTranslate.addEventListener("click", clickHandler)
 
-
-
-
-
-
-
-
-
+buttonTranslate.addEventListener("click", clickHandler)
 
 
 
