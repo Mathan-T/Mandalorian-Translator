@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Big+Shoulders+Stencil+Text:wght@400;700&display=swap');
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Acme', sans-serif;
+    background-image: url("/images/man.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+textarea {
+    width: 80%;
+    height: 10vh;
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#output {
+    border: 1px solid black;
+    width: 80%;
+    height: 10vh;
+    margin: 1rem;
+    padding: 1rem;
+}
