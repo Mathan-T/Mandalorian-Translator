@@ -6,13 +6,22 @@ body, html {
 
 body {
     font-family: 'Acme', sans-serif;
-    background-image: url("/images/man.jpg");
-    height: 100%;
+    font-style: oblique;
+    background-image: url("https://i.pinimg.com/originals/65/ce/c3/65cec300b6e8b5aaab49d15d06626ed1.png");
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
 }
 
+h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 1rem 0rem;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+}
 
 
 textarea {
@@ -21,12 +30,63 @@ textarea {
     display: block;
     padding: 1rem;
     margin: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    border-color: grey;
 }
 
 #output {
-    border: 1px solid black;
+    border: 1px solid grey;
     width: 80%;
     height: 10vh;
     margin: 1rem;
     padding: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#btn-translate {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+	height: 30px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+}
+
+
+.ot-here {
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 25px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+}
+
+
+.container {
+    display: block;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.div-header {
+    font-weight: 900;
+    font-size: 25px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.footpara {
+    font-weight: 900;
+    font-style: inherit;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
 }
