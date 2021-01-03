@@ -37,13 +37,16 @@ textarea {
 }
 
 #output {
-    border: 1px solid grey;
+    border: solid 1px grey;
     width: 80%;
     height: 10vh;
+    display: block;
     margin: 1rem;
     padding: 1rem;
+    align-items: center;
     margin-right: auto;
     margin-left: auto;
+    background-color: transparent;
 }
 
 
